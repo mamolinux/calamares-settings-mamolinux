@@ -1,0 +1,130 @@
+- name: "Utilities for Timeshift and Btrfs"
+  description: "Utility software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - grub-btrfs
+    - rollback-git
+    - snap-sync
+    - snap-pac
+    - snapper
+    - timeshift
+    - timeshift-autosnap
+- name: "Utilities for Android"
+  description: "Utility software android"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - airdroid-nativefier
+    - android-tools
+    - android-file-transfer
+    - android-sdk-platform-tools
+    - droidcam
+    - qtscrcpy
+    - scrcpy
+- name: "Utilities for IOS"
+  description: "Utility software ios"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - ifuse
+    - shairport-sync
+- name: "Utilities for benchmarking"
+  description: "Utility software benchmarking"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - blender-benchmark
+    - geekbench
+    - gputest
+    - phoronix-test-suite
+- name: "Application installers or launchers"
+  description: "Application installers or launchers"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - albert
+    - appimagelauncher
+    - bauh
+    - flatpak
+    - octopi
+    - pamac-all
+    - snapd
+    - synapse
+    - ulauncher
+    - xlunch-git
+- name: "Utilities for hardware discovery"
+  description: "Utility software for hardware discovery"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - alsi
+    - archey3
+    - bpytop
+    - cpufetch-git
+    - cpu-x
+    - glances
+    - gotop-bin
+    - gtop
+    - hddtemp
+    - htop
+    - lm_sensors
+    - lshw
+    - nvtop
+    - nvtop-git
+    - pfetch
+    - powertop
+    - screenfetch
+    - slurm
+    - speedtest-cli-git
+    - s-tui
+    - sysprof
+    - ufetch-git
+- name: "Utilities"
+  description: "Utility software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - auto-cpufreq
+    - bleachbit
+    - caffeine
+    - caffeine-ng
+    - catfish
+    - galculator
+    - google-earth-pro
+    - grsync
+    - gufw
+    - kbackup
+    - mullvad-vpn-bin
+    - optimus-manager
+    - parcellite
+    - piper
+    - putty
+    - redshift
+    - simple-scan
+    - slimbookbattery
+    - solaar
+    - stacer
+    - stacer-bin
+    - systemd-manager
+    - tuxboot
+    - tuxboot-git
+    - vnstat
+    - wireshark-qt
+    - workrave
+    - wttr
+    - yin-yang-git
