@@ -1,3 +1,38 @@
+calamares-settings-mamolinux (1:21.10.2mamolinux1) UNRELEASED; urgency=medium
+
+  * remove lubuntu and ubuntustudio specific files 
+  * Add install and overrides for mamolinux
+    Makefile
+    - remove lubuntu and ubuntustudio
+    - add mamolinux
+    debian/control
+    - change source name to calamares-settings-mamolinux
+    - remove lubuntu and ubuntustudio
+    - add mamolinux
+    - add myself as new maintainer
+    debian/copyright
+    - add myself
+  * Add mamolinux specific files
+  * Add advanced install settings in the packaging
+  * MamoLinux specific updates
+    - Makefile
+      - change permission
+    - mamolinux/modules/after_bootloader_context.conf
+      - replace lubuntu with mamolinux
+    - mamolinux/modules/bootloader.conf
+      - replace ubuntu with mamolinux
+    - mamolinux/modules/displaymanager.conf
+      - replace sddm with lightdm
+      - replace lxqt with cinnamon-launcher
+      - replace Lubuntu with Cinnamon
+    - mamolinux/modules/partition.conf
+      - Add small and suspend as swap choices
+    - mamolinux/modules/welcome.conf
+      - Update showDonateUrl and internetCheckUrl
+      - Update requiredStorage and requiredRam
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Tue, 12 Apr 2022 11:37:17 +0530
+
 calamares-settings-ubuntu (1:21.10.2) impish; urgency=medium
 
   * Update desktop files for proper version. (LP: #1944778)
