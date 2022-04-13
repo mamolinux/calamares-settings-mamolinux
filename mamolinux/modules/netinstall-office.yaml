@@ -12,7 +12,24 @@
   selected: false
   packages:
     - calligra
-    - calligra-plan
+    - calligraplan
+    - calligrasheets
+    - calligrastage
+    - calligrawords
+- name: "Dictionary"
+  description: "Dictionary Applications"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - dict
+    - dict-de-en
+    - dict-freedict-all
+    - dict-freedict-ces-eng
+    - dict-freedict-dan-eng
+    - gnome-dictionary
+    - gjiten
+    - goldendict
 - name: "Epub"
   description: "Epub"
   critical: false
@@ -21,13 +38,13 @@
   packages:
     - calibre
     - sigil
-- name: "Freeoffice"
-  description: "Freeoffice"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - freeoffice
+# - name: "Freeoffice"
+#   description: "Freeoffice"
+#   critical: false
+#   hidden: false
+#   selected: false
+#   packages:
+#     - freeoffice
 - name: "Focuswriter"
   description: "Focuswriter"
   critical: false
@@ -49,52 +66,43 @@
   selected: false
   packages:
     - gnumeric
-- name: "Libre Office Fresh"
-  description: "Installs libre office fresh - feature branch - conflicts with still"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - libreoffice-fresh
-    - libreoffice-fresh-$LOCALE
-    - hunspell-$LOCALE
+# - name: "Libre Office Fresh"
+#   description: "Installs libre office fresh - feature branch - conflicts with still"
+#   critical: false
+#   hidden: false
+#   selected: false
+#   packages:
+#     - libreoffice-fresh
+#     - hunspell
 - name: "Libre Office Still"
   description: "Installs libre office still - stable branch - conflicts with fresh"
   critical: false
   hidden: false
   selected: false
   packages:
-    - libreoffice-still
-    - libreoffice-still-$LOCALE
-    - hunspell-$LOCALE
-- name: "Ms Office Online"
-  description: "Microsoft Office Suite Online as a native application"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - ms-office-online
-- name: "Moneydance"
-  description: "Moneydance"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - moneydance
-- name: "Onlyoffice"
-  description: "Onlyoffice"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - onlyoffice-bin
-- name: "Openoffice"
-  description: "Openoffice"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - openoffice-bin
+    - libreoffice
+    - hunspell
+# - name: "Moneydance"
+#   description: "Moneydance"
+#   critical: false
+#   hidden: false
+#   selected: false
+#   packages:
+#     - moneydance
+# - name: "Onlyoffice"
+#   description: "Onlyoffice"
+#   critical: false
+#   hidden: false
+#   selected: false
+#   packages:
+#     - onlyoffice-bin
+# - name: "Openoffice"
+#   description: "Openoffice"
+#   critical: false
+#   hidden: false
+#   selected: false
+#   packages:
+#     - openoffice-bin
 - name: "PDF applications"
   description: "PDF applications"
   critical: false
@@ -102,7 +110,7 @@
   selected: false
   packages:
     - atril
-    - epdfview
+    # - epdfview
     - evince
     - okular
     - pdfarranger
@@ -115,12 +123,12 @@
   selected: false
   packages:
     - scribus
-- name: "WPS Office"
-  description: "Installs wps office"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - wps-office
-    - wps-office-mime
-    - ttf-wps-fonts
+# - name: "WPS Office"
+#   description: "Installs wps office"
+#   critical: false
+#   hidden: false
+#   selected: false
+#   packages:
+#     - wps-office
+#     - wps-office-mime
+#     - ttf-wps-fonts

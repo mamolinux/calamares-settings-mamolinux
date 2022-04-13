@@ -5,24 +5,21 @@
   selected: false
   expanded: true
   packages:
-    - brave-bin
-    - chromium
+    # - brave-bin
+    - chromium-browser
     - falkon
     - firefox
-    - firefox-adblock-plus
-    - firefox-i18n-$LOCALE
-    - firefox-ublock-origin
-    - google-chrome
-    - librewolf-bin
+    # - google-chrome
+    # - librewolf-bin
     - midori
-    - min
+    # - min
     - netsurf
-    - opera
+    # - opera
     - qutebrowser
     - torbrowser-launcher
-    - vivaldi
-    - vivaldi-ffmpeg-codecs
-    - vivaldi-widevine
+    # - vivaldi
+    # - vivaldi-ffmpeg-codecs
+    # - vivaldi-widevine
 - name: "Downloaders"
   description: "Downloaders"
   critical: false
@@ -30,12 +27,17 @@
   selected: false
   expanded: true
   packages:
+    - aria2
     - deluge
     - filezilla
+    # - fragments
+    # - gdown
+    # - jdownloader2
     - ktorrent
+    - persepolis
     - qbittorrent
     - transmission-gtk
-    - xdman
+    # - xdman
 - name: "Cloud Software"
   description: "Cloud software"
   critical: false
@@ -43,10 +45,11 @@
   selected: false
   expanded: true
   packages:
-    - dropbox
-    - insync
-    - megasync-bin
-    - nextcloud-client
+    # - dropbox
+    # - insync
+    # - megasync-bin
+    # - nextcloud-client
+    - nextcloud-desktop
 - name: "Mail Clients"
   description: "Mail clients"
   critical: false
@@ -56,5 +59,5 @@
   packages:
     - evolution
     - geary
-    - mailspring    
+    # - mailspring
     - thunderbird

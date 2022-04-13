@@ -10,11 +10,13 @@
     - audacious
     - audacious-plugins
     - audacity
+    # - byte
     - cava
     - clementine
-    - curseradio-git
-    - deadbeef
+    # - curseradio-git
+    # - deadbeef
     - elisa
+    - gmpc
     - gmusicbrowser
     - juk
     - kwave
@@ -23,13 +25,13 @@
     - lmms
     - ncmpcpp
     - pragha
-    - radiotray
+    # - radiotray
     - rhythmbox
-    - sayonara-player
+    - sayonara
     - soundconverter
-    - spotify
-    - spotifywm-git
-    - tauon-music-box
+    # - spotify
+    # - spotifywm-git
+    # - tauon-music-box
 - name: "Video Software"
   description: "Primarily Video software"
   critical: false
@@ -38,32 +40,35 @@
   expanded: true
   packages:
     - celluloid
-    - filebot
-    - freetube-bin
+    # - filebot
+    # - freetube-bin
     - guvcview
     - handbrake
-    - hypnotix
-    - juk
+    # - hypnotix
+    # - juk (duplicate)
     - kazam
     - kdenlive
     - kodi-x11
     - kodi
-    - kodi-addons
+    - kodi-addons-dev
     - obs-studio
     - openshot
-    - makemkv
+    # - makemkv
     - mkvtoolnix-gui
-    - mpc
+    # - mpc (duplicate)
     - mpd
     - mpv
     - peek
     - pitivi
-    - plex-media-player
-    - plex-media-server
+    # - plex-media-player
+    # - plex-media-server
+    # - qtwebflix-git
     - simplescreenrecorder
     - smplayer
-    - spotify
-    - spotifywm-git
+    # - spotify (duplicate)
+    # - spotifywm-git (duplicate)
     - vlc
+    - vlc-plugin-access-extra
     - youtube-dl
-    - youtube-dl-gui-git
+    # - youtube-dl-gui-git
+    - yt-dlp

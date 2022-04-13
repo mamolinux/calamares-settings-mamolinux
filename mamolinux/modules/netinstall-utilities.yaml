@@ -5,47 +5,57 @@
   selected: false
   expanded: true
   packages:
-    - grub-btrfs
-    - rollback-git
-    - snap-sync
-    - snap-pac
-    - snapper
+    # - grub-btrfs
     - timeshift
-    - timeshift-autosnap
-- name: "Utilities for Android"
-  description: "Utility software android"
+    # - timeshift-autosnap
+- name: "Utilities for Snapper and Btrfs"
+  description: "Utility software"
   critical: false
   hidden: false
   selected: false
   expanded: true
   packages:
-    - airdroid-nativefier
-    - android-tools
-    - android-file-transfer
-    - android-sdk-platform-tools
-    - droidcam
-    - qtscrcpy
-    - scrcpy
-- name: "Utilities for IOS"
-  description: "Utility software ios"
-  critical: false
-  hidden: false
-  selected: false
-  expanded: true
-  packages:
-    - ifuse
-    - shairport-sync
-- name: "Utilities for benchmarking"
-  description: "Utility software benchmarking"
-  critical: false
-  hidden: false
-  selected: false
-  expanded: true
-  packages:
-    - blender-benchmark
-    - geekbench
-    - gputest
-    - phoronix-test-suite
+    # - btrfs-assistant
+    # - grub-btrfs
+    # - snap-pac
+    - snapper
+    - snapper-gui
+    - snapper-support
+# - name: "Utilities for Android"
+#   description: "Utility software android"
+#   critical: false
+#   hidden: false
+#   selected: false
+#   expanded: true
+#   packages:
+#     - airdroid-nativefier
+#     - android-tools
+#     - android-file-transfer
+#     - android-sdk-platform-tools
+#     - droidcam
+#     - qtscrcpy
+#     - scrcpy
+#     - waydroid
+# - name: "Utilities for IOS"
+#   description: "Utility software ios"
+#   critical: false
+#   hidden: false
+#   selected: false
+#   expanded: true
+#   packages:
+#     - ifuse
+#     - shairport-sync
+# - name: "Utilities for benchmarking"
+#   description: "Utility software benchmarking"
+#   critical: false
+#   hidden: false
+#   selected: false
+#   expanded: true
+#   packages:
+#     - blender-benchmark
+#     - geekbench
+#     - gputest
+#     - phoronix-test-suite
 - name: "Application installers or launchers"
   description: "Application installers or launchers"
   critical: false
@@ -59,10 +69,36 @@
     - flatpak
     - octopi
     - pamac-all
+    - pace
+    - paru-bin
+    - pikaur-git
     - snapd
     - synapse
+    - trizen
     - ulauncher
     - xlunch-git
+    - yay-bin
+- name: "Power Management"
+  description: "Power Management"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - battery-monitor
+    - upower
+    - system76-power
+- name: "Backlight"
+  description: "Backlight"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - acpilight
+    - brightnessctl
+    - gummy
+    - light
 - name: "Utilities for hardware discovery"
   description: "Utility software for hardware discovery"
   critical: false
@@ -72,18 +108,21 @@
   packages:
     - alsi
     - archey3
-    - bpytop
+    - bottom
+    - btop
     - cpufetch-git
     - cpu-x
     - glances
     - gotop-bin
+    - gsmartcontrol
     - gtop
     - hddtemp
     - htop
-    - lm_sensors
+    - lm-sensors
     - lshw
     - nvtop
     - nvtop-git
+    - ookla-speedtest-bin
     - pfetch
     - powertop
     - screenfetch
@@ -99,32 +138,47 @@
   selected: false
   expanded: true
   packages:
-    - auto-cpufreq
+    # - auto-cpufreq
     - bleachbit
+    - btrbk
     - caffeine
-    - caffeine-ng
+    # - caffeine-ng
     - catfish
-    - galculator
-    - google-earth-pro
+    - deja-dup
+    - fancontrol
+    # - gammy
+    # - google-earth-pro
     - grsync
+    - gtkhash
     - gufw
+    - hardinfo
     - kbackup
-    - mullvad-vpn-bin
-    - optimus-manager
+    # - linux-wifi-hotspot
+    - luckybackup
+    # - mullvad-vpn-bin
+    # - noisetorch
+    # - pacback
     - parcellite
     - piper
+    # - powerpill
     - putty
     - redshift
+    - simple-pwgen
     - simple-scan
-    - slimbookbattery
+    # - slimbookbattery
     - solaar
     - stacer
-    - stacer-bin
-    - systemd-manager
-    - tuxboot
-    - tuxboot-git
+    # - stacer-bin
+    - sticky
+    - syncthing
+    # - systemd-manager
+    - tlp
+    # - tuxboot
+    # - tuxboot-git
     - vnstat
+    # - wacom-utility
+    # - wacom-settings-git
     - wireshark-qt
     - workrave
-    - wttr
-    - yin-yang-git
+    # - wttr
+    # - yin-yang-git
