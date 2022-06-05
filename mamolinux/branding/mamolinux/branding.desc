@@ -8,10 +8,10 @@ windowPlacement: center
 strings:
     productName:         MamoLinux
     shortProductName:    MamoLinux
-    version:             21.10
-    shortVersion:        impish
+    version:             22.04
+    shortVersion:        jammy
     versionedName:       MamoLinux
-    shortVersionedName:  MamoLinux 21.10
+    shortVersionedName:  MamoLinux 22.04
     bootloaderEntryName: MamoLinux
     productUrl:          https://hsbasu.github.io/mamolinux/
     supportUrl:          https://hsbasu.github.io/mamolinux/
