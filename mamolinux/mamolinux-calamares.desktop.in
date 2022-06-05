@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-_Name=Install MamoLinux 21.10
+_Name=Install MamoLinux 22.04 LTS
 _GenericName=Install MamoLinux
 Exec=bash -c "export BROWSER='sudo -H -u mamolinux firefox'; sudo -E calamares -D6"
 _Comment=Calamares — System Installer

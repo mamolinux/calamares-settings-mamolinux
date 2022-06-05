@@ -2,6 +2,7 @@ calamares-settings-mamolinux (1:22.04.1) UNRELEASED; urgency=medium
 
   * Welcome to Jammy Jellyfish!
     - Update Branding to 22.04.
+    - Update desktop file.
 
  -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Sun, 05 Jun 2022 13:19:32 +0530
 
