@@ -6,20 +6,25 @@
   expanded: true
   packages:
     - cheese
-    - font-manager-git
+    - font-manager
     - galculator
+    - gnome-calculator
+    - gnome-characters
+    - gnome-system-monitor
     - gpick
-    - flameshot-git
+    - gucharmap
+    - flameshot
     - liferea
     - mediainfo-gui
     - mcomix
     - nitrogen
     - nomacs
+    - p7zip-full
     - pdfarranger
     - plank
-    - arcolinux-plank-themes-git
-    - screenkey-git
-    - vim-plugins
+    # - arcolinux-plank-themes-git
+    - screenkey
+    # - vim-plugins
     - variety
 - name: "Conky"
   description: "Conky and conky collection"
@@ -28,9 +33,13 @@
   selected: false
   expanded: true
   packages:
-    - arcolinux-conky-collection-git
-    - arcolinux-pipemenus-git
-    - conky-lua-archers
+    # - arcolinux-conky-collection-git
+    # - arcolinux-pipemenus-git
+    # - conky-lua-archers
+    - conky
+    - conky-all
+    - conky-cli
+    - conky-std
     - yad
 - name: "Git"
   description: "Git applications"
@@ -39,10 +48,11 @@
   selected: false
   expanded: true
   packages:
-    - gitahead-bin
+    # - gitahead-bin
     - gitg
-    - gitfiend
-    - gitkraken
+    - git-gui
+    # - gitfiend
+    # - gitkraken
 - name: "Password Manager"
   description: "Password managers"
   critical: false
@@ -50,10 +60,10 @@
   selected: false
   expanded: true
   packages:
-    - bitwarden-bin
-    - enpass-bin
+    - bitwarden
+    # - enpass-bin
     - keepassxc
-    - lastpass
+    - lastpass-cli
 - name: "Privacy"
   description: "Applications that ensure your privacy"
   critical: false
@@ -61,7 +71,7 @@
   selected: false
   expanded: true
   packages:
-    - tor-browser
+    # - tor-browser
     - tor
     - privoxy
 - name: "Virtualbox for Linux kernel"
@@ -72,7 +82,7 @@
   expanded: false
   packages:
     - virtualbox
-    - virtualbox-host-dkms
+    - virtualbox-dkms
     - linux-headers
 - name: "Virtualbox for Linux-lts kernel"
   description: "Installs virtualbox for linux-lts kernel"
@@ -82,7 +92,7 @@
   expanded: false
   packages:
     - virtualbox
-    - virtualbox-host-dkms
+    - virtualbox-dkms
     - linux-lts-headers
     - linux-lts
 - name: "Vmware"
@@ -93,8 +103,9 @@
   expanded: false
   packages:
     - open-vm-tools
-    - vmware-workstation
-    - vmware-keymaps
+    # - vmware-workstation
+    - vmware-manager
+    # - vmware-keymaps
 - name: "Zsh"
   description: "Zsh"
   critical: false
@@ -103,9 +114,10 @@
   expanded: true
   packages:
     - zsh
-    - zsh-completions
+    - zsh-autosuggestions
+    # - zsh-completions
     - zsh-syntax-highlighting
-    - zsh-theme-powerlevel10k-git
-    - arcolinux-zsh-git
-    - oh-my-zsh-git
-    - oh-my-zsh-powerline-theme-git
+    - zsh-theme-powerlevel9k
+    # - arcolinux-zsh-git
+    # - oh-my-zsh-git
+    # - oh-my-zsh-powerline-theme-git

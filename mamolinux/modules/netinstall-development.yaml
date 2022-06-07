@@ -1,0 +1,37 @@
+- name: "Development"
+  description: "Development software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - anjuta
+    - arduino
+    # - atom
+    - bluefish
+    # - brackets-bin
+    # - code
+    - codeblocks
+    - devscripts
+    - dpkg-dev
+    - emacs
+    - geany
+    - geany-plugins
+    - git
+    - glade
+    # - intellij-idea-community-edition
+    - kdevelop
+    # - kde-dev-utils
+    # - leafpad
+    - meld
+    - netbeans
+    - notepadqq
+    - pbuilder
+    - openscad
+    # - pycharm-community-edition
+    # - qt5-tools
+    - qtcreator
+    - qttools5-dev
+    # - sublime-text-4
+    - ubuntu-dev-tools
+    # - visual-studio-code-bin
