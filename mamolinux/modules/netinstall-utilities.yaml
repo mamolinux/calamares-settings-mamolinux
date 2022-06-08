@@ -182,3 +182,14 @@
     - workrave
     # - wttr
     # - yin-yang-git
+- name: "Bootloaders"
+  description: "Utility packages for bootloaders"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - grub-efi-amd64-signed
+    - grub-efi-ia32
+    - grub-pc
+    - shim-signed
