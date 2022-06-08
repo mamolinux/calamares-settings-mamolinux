@@ -1,3 +1,13 @@
+calamares-settings-mamolinux (1:22.04.1mamolinux2) jammy; urgency=medium
+
+  * Fix netinstall modules (#3)
+    - remove remote configuations, use local files
+    - netinstall-drivers: fix permission
+    - Add netinstall modules for advanced install
+    - Add deb packaging generated files to .gitignore
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Wed, 08 Jun 2022 23:03:02 +0530
+
 calamares-settings-mamolinux (1:22.04.1mamolinux1) jammy; urgency=medium
 
   * Add netinstall configuration files (#2)
