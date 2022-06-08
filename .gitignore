@@ -1,1 +1,5 @@
 debian/files
+debian/*debhelper*
+debian/calamares-settings-mamolinux/
+debian/calamares-settings-ubuntu-common/
+*.substvars
