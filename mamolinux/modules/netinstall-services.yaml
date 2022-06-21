@@ -5,7 +5,8 @@
   critical: false
   expanded: false
   packages:
-    - pulseaudio-bluetooth
+    # - pulseaudio-bluetooth
+    - pulseaudio-module-bluetooth
     - bluez
     - bluez-libs
     - bluez-utils
@@ -63,8 +64,9 @@
   critical: false
   packages:
     - pulseaudio
-    - pulseaudio-alsa
+    # - pulseaudio-alsa
     - pavucontrol
+    - alsa-base
     - alsa-utils
     - alsa-plugins
     - alsa-lib
@@ -76,3 +78,12 @@
     - gst-plugins-ugly
     - volumeicon
     - playerctl
+- name: "SSH"
+  description: "Support for secure shell - enable service"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+    - openssh-client
+    - openssh-server
+    - openssh-sftp-server
