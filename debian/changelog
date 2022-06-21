@@ -1,3 +1,13 @@
+calamares-settings-mamolinux (1:22.04.1mamolinux3) jammy; urgency=medium
+
+  * FIx no internet calamares chroot (#4)
+    - do not mount tmpfs in /run
+    - remove mount /run/udev
+    - Add live install packages for removal
+    - Add packages for sound and ssh services
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Tue, 21 Jun 2022 20:44:15 +0530
+
 calamares-settings-mamolinux (1:22.04.1mamolinux2) jammy; urgency=medium
 
   * Fix netinstall modules (#3)
