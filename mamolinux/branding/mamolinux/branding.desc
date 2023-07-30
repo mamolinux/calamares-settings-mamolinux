@@ -1,17 +1,15 @@
 ---
 componentName: mamolinux
 
-windowExpanding:    normal
-windowSize: 800px,520px
-windowPlacement: center
+windowExpanding:    fullscreen
 
 strings:
     productName:         MamoLinux
     shortProductName:    MamoLinux
-    version:             22.04
+    version:             22.04.2
     shortVersion:        jammy
     versionedName:       MamoLinux
-    shortVersionedName:  MamoLinux 22.04
+    shortVersionedName:  MamoLinux 22.04.2
     bootloaderEntryName: MamoLinux
     productUrl:          https://hsbasu.github.io/mamolinux/
     supportUrl:          https://hsbasu.github.io/mamolinux/
@@ -26,6 +24,6 @@ slideshow:               "show.qml"
 slideshowAPI:            1
 
 style:
-   sidebarBackground:    "#DD682A"
+   sidebarBackground:    "#12A327"
    sidebarText:          "#FFFFFF"
-   sidebarTextSelect:    "#DD682A"
+   sidebarTextSelect:    "#12A327"
