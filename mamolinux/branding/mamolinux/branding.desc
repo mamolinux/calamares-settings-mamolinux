@@ -1,7 +1,26 @@
 ---
 componentName: mamolinux
 
-windowExpanding:    fullscreen
+# Size and expansion policy for Calamares.
+#  - "normal" or unset, expand as needed, use *windowSize*
+#  - "fullscreen", start as large as possible, ignore *windowSize*
+#  - "noexpand", don't expand automatically, use *windowSize*
+windowExpanding:    normal
+
+# Size of Calamares window, expressed as w,h. Both w and h
+# may be either pixels (suffix px) or font-units (suffix em).
+#   e.g.    "800px,600px"
+#           "60em,480px"
+# This setting is ignored if "fullscreen" is selected for
+# *windowExpanding*, above. If not set, use constants defined
+# in CalamaresUtilsGui, 800x520.
+windowSize: 800px,600px
+
+# Placement of Calamares window. Either "center" or "free".
+# Whether "center" actually works does depend on the window
+# manager in use (and only makes sense if you're not using
+# *windowExpanding* set to "fullscreen").
+windowPlacement: center
 
 strings:
     productName:         MamoLinux
@@ -23,6 +42,17 @@ slideshow:               "show.qml"
 
 slideshowAPI:            1
 
+# Colors for text and background components.
+#
+#  - SidebarBackground is the background of the sidebar
+#  - SidebarText is the (foreground) text color
+#  - SidebarBackgroundCurrent sets the background of the current step.
+#    Optional, and defaults to the application palette.
+#  - SidebarTextCurrent is the text color of the current step.
+#
+# These colors can **also** be set through the stylesheet, if the
+# branding component also ships a stylesheet.qss. Then they are
+# the corresponding CSS attributes of #sidebarApp.
 style:
    sidebarBackground:    "#12A327"
    sidebarText:          "#FFFFFF"
