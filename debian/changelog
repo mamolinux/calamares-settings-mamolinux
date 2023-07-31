@@ -1,3 +1,21 @@
+calamares-settings-mamolinux (1:22.04.4.3mamolinux1) stable; urgency=medium
+
+  * Rebase with Lubuntu jammy (#6)
+    - Don't allow the first user to be created with a blank password in either
+      Lubuntu or Ubuntu Studio. (LP: #2016436)
+    - Fixed LibreOffice localization bug (LP: #1970270)
+    - Fixed BTRFS installation bug (LP: #1966774).
+    - Change calamares to use Ubuntu Studio Light colors
+    - Fix for kded automount issue (LP: #1965658)
+    - Update Ubuntu Studio logo, slideshow (LP: #1965645)
+  * Rebase from upstream lubuntu (#7)
+    
+  * Add advanced installation option (#8)
+    - User can install lots of extra packages
+      during installation using advanced install
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Mon, 31 Jul 2023 21:47:26 +0530
+
 calamares-settings-mamolinux (1:22.04.1mamolinux3) jammy; urgency=medium
 
   * FIx no internet calamares chroot (#4)
