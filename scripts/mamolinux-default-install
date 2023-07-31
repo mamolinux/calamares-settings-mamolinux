@@ -1,0 +1,6 @@
+#!/bin/python3
+
+import os
+
+os.system("cp /etc/calamares/settings-default.conf /etc/calamares/settings.conf")
+os.system("calamares -D6")
