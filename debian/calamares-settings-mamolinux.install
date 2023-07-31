@@ -1,7 +1,8 @@
 mamolinux/branding/ etc/calamares/
 mamolinux/calamares-logs-helper usr/bin/
-mamolinux/mamolinux-calamares.desktop usr/share/applications/
+mamolinux/mamolinux-calamares*.desktop usr/share/applications/
 mamolinux/modules/ etc/calamares/
 mamolinux/settings.conf etc/calamares/
 mamolinux/settings-default.conf etc/calamares/
 mamolinux/settings-advanced.conf etc/calamares/
+scripts/* usr/bin/
