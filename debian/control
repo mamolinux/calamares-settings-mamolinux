@@ -36,4 +36,3 @@ Description: Common Calamares Settings
  This package contains the common Calamares settings for all flavors.
  There is also a automirror Python script to set sources based on
  geolocation.
- 
