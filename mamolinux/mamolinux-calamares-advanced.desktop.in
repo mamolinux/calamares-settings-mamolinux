@@ -3,7 +3,7 @@ Type=Application
 Version=1.0
 _Name=Install MamoLinux 22.04.2 LTS (Advanced)
 _GenericName=Install MamoLinux (Advanced)
-Exec=bash -c "pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY mamolinux-advanced-install"
+Exec=bash -c "export BROWSER='sudo -H -u mamolinux firefox'; mamolinux-advanced-install"
 _Comment=Calamares — System Installer
 Icon=calamares
 Terminal=false
