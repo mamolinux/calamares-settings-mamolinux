@@ -9,7 +9,6 @@ calamares-settings-mamolinux (1:22.04.4.3mamolinux1) stable; urgency=medium
     - Fix for kded automount issue (LP: #1965658)
     - Update Ubuntu Studio logo, slideshow (LP: #1965645)
   * Rebase from upstream lubuntu (#7)
-    
   * Add advanced installation option (#8)
     - User can install lots of extra packages
       during installation using advanced install

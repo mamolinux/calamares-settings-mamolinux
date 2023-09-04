@@ -2,5 +2,5 @@
 
 import os
 
-os.system("cp /etc/calamares/settings-advanced.conf /etc/calamares/settings.conf")
-os.system("calamares -D6")
+os.system("sudo -E cp /etc/calamares/settings-advanced.conf /etc/calamares/settings.conf")
+os.system("sudo -E calamares -D6")
