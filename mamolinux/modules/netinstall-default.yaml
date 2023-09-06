@@ -1,0 +1,208 @@
+- name: "Desktop"
+  description: "Full desktop environments"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - mamolinux-desktop
+    - mamolinux-desktop-full
+- name: "Accessories"
+  description: "Accessories"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - baobab
+    - cheese
+    - flameshot
+    - font-manager
+    - galculator
+    - gnome-calendar
+    - gnome-characters
+    - gnome-todo
+    - gpick
+    - gucharmap
+    - liferea
+    - nitrogen
+    - nomacs
+    - p7zip-full
+    - screenkey
+    - simple-scan
+    - sticky
+    - variety
+    - usb-creator-gtk
+- name: "Education"
+  description: "Educating applications"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - goldendict
+    - texlive-base
+    - texlive-bibtex-extra
+    - texlive-latex-base
+    - texlive-xetex
+- name: "Games"
+  description: "Gaming applications"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - aisleriot
+    - gnome-chess
+    - gnome-mahjongg
+    - gnome-mines
+    - gnome-sudoku
+- name: "Graphics"
+  description: "Painting and Imaging"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - shotwell
+    - gimp
+    - krita
+    - inkscape
+    - pinta
+- name: "Internet"
+  description: "Internet applications"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - anydesk
+    - evolution
+    - hexchat
+    - kdeconnect
+    - microsoft-edge-stable
+    - remmina
+    - skypeforlinux
+    - syncthing
+    - thunderbird
+    - transmission-gtk
+    - webapp-manager
+- name: "Office"
+  description: "Office applications"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - mcomix
+    - pdfarranger
+    - libreoffice
+    - libreoffice-gnome
+    - libreoffice-ogltrans
+    - libreoffice-pdfimport
+    - libreoffice-base
+    - libreoffice-calc
+    - libreoffice-draw
+    - libreoffice-imptress
+    - libreoffice-math
+    - libreoffice-writer
+- name: "Multimedia"
+  description: "Sound and Video applications"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - handbrake
+    - mediainfo-gui
+    - rhythmbox
+    - totem
+    - vlc-plugin-access-extra
+- name: "Administration"
+  description: "System Administration"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - battery-monitor
+    - dconf-editor
+    - deb-get
+    - deja-dup
+    - flatpak
+    - gdebi
+    - grsync
+    - hardinfo
+    - leaptime-manager
+    - lm-sensors
+    - luckybackup
+    - timeshift
+- name: "Development"
+  description: "Applications for development and programming"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - code
+    - debootstrap
+    - git
+    - gitg
+    - git-build-recipe
+    - glade
+    - intltool
+    - pbuilder
+    - ubuntu-dev-tools
+- name: "Security"
+  description: "Password managers and Security"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - bitwarden
+    - gtkhash
+    - keepassxc
+    - lastpass-cli
+    - seahorse
+    - simple-pwgen
+- name: "Fonts"
+  description: "Fonts"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - fonts-indic
+    - fonts-liberation2
+    - fonts-noto
+    - fonts-noto-color-emoji
+    - fonts-noto-extra
+    - fonts-opensymbol
+- name: "Zsh"
+  description: "Zsh"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - zsh
+    - zsh-autosuggestions
+    - zsh-syntax-highlighting
+    - zsh-theme-powerlevel9k
+- name: "Intel oneAPI"
+  description: "Intel oneAPI Toolkits"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - intel-oneapi-compiler-dpcpp-cpp
+    - intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic
+    - intel-oneapi-dev-utilities
+    - intel-oneapi-diagnostics-utility
+    - intel-oneapi-dpcpp-ct
+    - intel-oneapi-dpcpp-debugger
+    - intel-oneapi-inspector
+    - intel-oneapi-mkl-devel
+    - intel-oneapi-mpi-devel
