@@ -18,7 +18,7 @@ Presentation
             x:0
             y:0
             width: 810
-            height: 485
+            height: 456
             fillMode: Image.PreserveAspectFit
             smooth: true
             source: "FindUs.png"
@@ -31,7 +31,7 @@ Presentation
             x: 0
             y: 0
             width: 810
-            height: 485
+            height: 456
             fillMode: Image.PreserveAspectFit
             smooth: true
             source: "NewLook.png"
@@ -44,7 +44,7 @@ Presentation
             x: 0
             y: 0
             width: 810
-            height: 485
+            height: 456
             fillMode: Image.PreserveAspectFit
             smooth: true
             source: "Accessories.png"
@@ -57,7 +57,7 @@ Presentation
             x: 0
             y: 0
             width: 810
-            height: 485
+            height: 456
             fillMode: Image.PreserveAspectFit
             smooth: true
             source: "TweakIt.png"
@@ -70,7 +70,7 @@ Presentation
             x: 0
             y: 0
             width: 810
-            height: 485
+            height: 456
             fillMode: Image.PreserveAspectFit
             smooth: true
             source: "Media.png"
@@ -83,7 +83,7 @@ Presentation
             x: 0
             y: 0
             width: 810
-            height: 485
+            height: 456
             fillMode: Image.PreserveAspectFit
             smooth: true
             source: "Firefox.png"
@@ -97,7 +97,7 @@ Presentation
             x: 0
             y: 0
             width: 810
-            height: 485
+            height: 456
             fillMode: Image.PreserveAspectFit
             smooth: true
             source: "Office.png"
@@ -110,7 +110,7 @@ Presentation
             x: 0
             y: 0
             width: 810
-            height: 485
+            height: 456
             fillMode: Image.PreserveAspectFit
             smooth: true
             source: "Help.png"
