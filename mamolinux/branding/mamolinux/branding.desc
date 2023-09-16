@@ -25,10 +25,10 @@ windowPlacement: center
 strings:
     productName:         MamoLinux
     shortProductName:    MamoLinux
-    version:             22.04.2
+    version:             22.04.3
     shortVersion:        jammy
     versionedName:       MamoLinux
-    shortVersionedName:  MamoLinux 22.04.2
+    shortVersionedName:  MamoLinux 22.04.3
     bootloaderEntryName: MamoLinux
     productUrl:          https://hsbasu.github.io/mamolinux/
     supportUrl:          https://hsbasu.github.io/mamolinux/
