@@ -1,3 +1,31 @@
+calamares-settings-mamolinux (1:22.04.4.3mamolinux2) stable; urgency=medium
+
+  * Replace logo and icon with mamolinux icons (#9)
+    - Use mamolinux logo and icon
+    - Fix lintian in d/control
+  * Fix install scripts and desktop commands (#10)
+    - Now calamares logs at user directory
+  * Update mount, packages and after_bootloader (#11)
+    - mount: remove binding /run
+    - after_bootloader: remove .desktop files post install
+    - packages: remove mamolinux-live post install
+  * Rename bootloader to ubuntu (#12)
+    - Ubuntu's grub does not yet support
+      bootloader name other than ubuntu.
+  * Let users choose basic packages (#13)
+    - Users can install additional packages
+      during installation
+  * Add installer shortcut to desktop (#14)
+    - Add desktop files to etc/skel/Desktop
+    - Add post installer script
+    - d/control: fix standard version for lintian
+  * Update slides with mamolinux branding (#15)
+  * Update versions to 22.04.3 (#16)
+    - Update desktop files
+    - Update branding
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Sat, 16 Sep 2023 20:45:47 +0530
+
 calamares-settings-mamolinux (1:22.04.4.3mamolinux1) stable; urgency=medium
 
   * Rebase with Lubuntu jammy (#6)
