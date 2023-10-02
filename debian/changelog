@@ -1,3 +1,18 @@
+calamares-settings-mamolinux (1:23.04.12mamolinux1) stable; urgency=medium
+
+  * Update slides with Lunar (#17)
+  * Rebase with lubuntu (#18)
+    - Move common modules to ubuntu-common
+    - Use python3-distro to get distro data
+    - Add python3-distro to d/control
+    - Update d/rules
+  * Update changelog from lubuntu (#19)
+  * Update branding and desktop file with lunar (#20)
+    - Update branding and desktop files with
+      version 23.04 for lunar
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Mon, 02 Oct 2023 12:28:29 +0530
+
 calamares-settings-ubuntu (1:23.04.12) lunar; urgency=medium
 
   * Don't allow the first user to be created with a blank password in either
