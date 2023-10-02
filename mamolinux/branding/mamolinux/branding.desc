@@ -25,10 +25,10 @@ windowPlacement: center
 strings:
     productName:         MamoLinux
     shortProductName:    MamoLinux
-    version:             22.04.3
-    shortVersion:        jammy
+    version:             23.04
+    shortVersion:        lunar
     versionedName:       MamoLinux
-    shortVersionedName:  MamoLinux 22.04.3
+    shortVersionedName:  MamoLinux 23.04
     bootloaderEntryName: MamoLinux
     productUrl:          https://hsbasu.github.io/mamolinux/
     supportUrl:          https://hsbasu.github.io/mamolinux/
@@ -54,6 +54,6 @@ slideshowAPI:            1
 # branding component also ships a stylesheet.qss. Then they are
 # the corresponding CSS attributes of #sidebarApp.
 style:
-   sidebarBackground:    "#12A327"
-   sidebarText:          "#FFFFFF"
-   sidebarTextSelect:    "#12A327"
+   SidebarBackground:    "#12A327"
+   SidebarText:          "#FFFFFF"
+   SidebarTextCurrent:   "#12A327"
