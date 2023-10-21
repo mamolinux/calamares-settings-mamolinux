@@ -1,3 +1,13 @@
+calamares-settings-mamolinux (1:23.04.12mamolinux2) lunar; urgency=medium
+
+  * Fix root and user vars and rebase from lubuntu (#21)
+    - Rebase from lubuntu
+    - Move mount options from fstab to mount
+    - Replace root variable with shell expansion
+      expression
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Sat, 21 Oct 2023 13:09:59 +0530
+
 calamares-settings-mamolinux (1:23.04.12mamolinux1) stable; urgency=medium
 
   * Update slides with Lunar (#17)
