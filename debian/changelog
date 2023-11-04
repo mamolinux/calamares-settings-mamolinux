@@ -1,3 +1,13 @@
+calamares-settings-mamolinux (1:23.10.4mamolinux1) mantic; urgency=medium
+
+  * Rebase from lubuntu mantic (#22)
+  * Update slides and version to mantic (#23)
+    - Update version on welcome slide
+    - Update version in branding
+    - Set slide interval to 15 seconds
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Sat, 04 Nov 2023 11:29:34 +0530
+
 calamares-settings-mamolinux (1:23.04.12mamolinux2) lunar; urgency=medium
 
   * Fix root and user vars and rebase from lubuntu (#21)
