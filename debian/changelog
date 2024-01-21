@@ -1,3 +1,9 @@
+calamares-settings-mamolinux (1:23.10.4mamolinux2) stable; urgency=medium
+
+  * Fix version in .desktop and update translation (#24)
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Sun, 21 Jan 2024 10:58:10 +0530
+
 calamares-settings-mamolinux (1:23.10.4mamolinux1) mantic; urgency=medium
 
   * Rebase from lubuntu mantic (#22)
