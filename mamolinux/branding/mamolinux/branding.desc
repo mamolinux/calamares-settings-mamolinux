@@ -25,13 +25,13 @@ windowPlacement: center
 strings:
     productName:         MamoLinux
     shortProductName:    MamoLinux
-    version:             23.10
-    shortVersion:        mantic
+    version:             24.04 LTS
+    shortVersion:        noble
     versionedName:       MamoLinux
-    shortVersionedName:  MamoLinux 23.10
-    bootloaderEntryName: MamoLinux
+    shortVersionedName:  MamoLinux 24.04 LTS
+    bootloaderEntryName: Ubuntu
     productUrl:          https://hsbasu.github.io/mamolinux/
-    supportUrl:          https://hsbasu.github.io/mamolinux/
+    supportUrl:          https://github.com/hsbasu/mamolinux/issues
 
 images:
     productLogo:         "logo.png"
