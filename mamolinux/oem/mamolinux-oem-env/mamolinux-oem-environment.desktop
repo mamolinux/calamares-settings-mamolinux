@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/usr/libexec/start-mamolinux-oem-env
+Name=MamoLinux OEM Environment
+Comment=Starts the MamoLinux OEM Environment
+Type=Application
+Name[en]=mamolinux-oem-environment.desktop
