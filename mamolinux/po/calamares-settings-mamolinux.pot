@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 11:11+0530\n"
+"POT-Creation-Date: 2024-06-02 00:47+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../mamolinux-calamares.desktop.in.h:1
-msgid "Install MamoLinux 23.10"
+msgid "Install MamoLinux 24.04 LTS"
 msgstr ""
 
 #: ../mamolinux-calamares.desktop.in.h:2
@@ -31,7 +31,7 @@ msgid "Calamares — System Installer"
 msgstr ""
 
 #: ../mamolinux-calamares-advanced.desktop.in.h:1
-msgid "Install MamoLinux 23.10 (Advanced)"
+msgid "Install MamoLinux 24.04 LTS (Advanced)"
 msgstr ""
 
 #: ../mamolinux-calamares-advanced.desktop.in.h:2
