@@ -1,9 +1,14 @@
+common/modules/pkgselect/pkgselect.qml etc/calamares/branding/mamolinux/
 mamolinux/branding/ etc/calamares/
 mamolinux/calamares-logs-helper usr/bin/
+mamolinux/calamares-launch-normal usr/bin/
 mamolinux/mamolinux-calamares*.desktop usr/share/applications/
 mamolinux/mamolinux-calamares*.desktop etc/skel/Desktop
+mamolinux/mamolinux-installer.svg usr/share/icons/hicolor/scalable/apps/
 mamolinux/modules/ etc/calamares/
-mamolinux/settings.conf etc/calamares/
-mamolinux/settings-default.conf etc/calamares/
-mamolinux/settings-advanced.conf etc/calamares/
+mamolinux/settings*.conf etc/calamares/
+mamolinux/oem/calamares-launch-oem usr/bin/
+mamolinux/oem/calamares-launch-oem.desktop usr/share/applications/
+mamolinux/oem/calamares-oemprep.sh usr/libexec/
+mamolinux/oemconfig.tar.gz etc/calamares/
 scripts/* usr/bin/
