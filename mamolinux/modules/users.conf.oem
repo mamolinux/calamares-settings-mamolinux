@@ -20,3 +20,11 @@ passwordRequirements:
 user:
   shell: /bin/bash
   forbidden_names: [ root ]
+# Force the user of an OEM user
+presets:
+  fullName:
+    value: "OEM configuration"
+    editable: false
+  loginName:
+    value: "oem"
+    editable: false
