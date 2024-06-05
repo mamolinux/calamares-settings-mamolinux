@@ -5,7 +5,7 @@ _Name=Install MamoLinux 24.04 LTS (Advanced)
 _GenericName=Install MamoLinux (Advanced)
 Exec=bash -c "export BROWSER='sudo -H -u mamolinux firefox'; mamolinux-advanced-install"
 _Comment=Calamares — System Installer
-Icon=calamares
+Icon=mamolinux-installer
 Terminal=false
 StartupNotify=true
 Categories=Qt;System;
