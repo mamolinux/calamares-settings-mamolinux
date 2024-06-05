@@ -39,7 +39,7 @@ Description: MamoLinux Calamares Settings and Branding
 
 Package: calamares-settings-ubuntu-common
 Architecture: any
-Depends: calamares (>= 3.3.5),
+Depends: calamares (>= 3.2.14~),
          cryptsetup,
          kdialog,
          keyutils,

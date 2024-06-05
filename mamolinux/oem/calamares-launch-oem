@@ -3,6 +3,7 @@
 # Enables OEM installaiton mode in Calamares.
 
 if [ -e '/etc/calamares/OEM_MODE_ACTIVATED' ]; then
+  export BROWSER='sudo -H -u mamolinux firefox'
   calamares -D8;
   exit;
 fi
@@ -19,7 +20,7 @@ EOL
 
 if kdialog --warningyesno "${msg}"; then
   # Tweak branding to make it clear that OEM installation mode is active
-  cp /etc/calamares/branding/lubuntu/welcome-oem.png /etc/calamares/branding/lubuntu/welcome.png;
+  cp /etc/calamares/branding/mamolinux/welcome-oem.png /etc/calamares/branding/mamolinux/welcome.png;
 
   # Don't remove Calamares from the installed system.
   sed -i '/- calamares$/d' /etc/calamares/modules/packages.conf;
@@ -38,5 +39,6 @@ if kdialog --warningyesno "${msg}"; then
   touch /etc/calamares/OEM_MODE_ACTIVATED;
 
   # Launch Calamares
+  export BROWSER='sudo -H -u mamolinux firefox'
   calamares -D8;
 fi
