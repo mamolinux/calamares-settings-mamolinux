@@ -1,4 +1,4 @@
-calamares-settings-ubuntu (1:24.04.39mamolinux1) noble; urgency=medium
+calamares-settings-mamolinux (1:24.04.39mamolinux1) noble; urgency=medium
 
   * Prepare for noble (#25)
   * Rebase modules and settings from lubuntu noble (#26)
