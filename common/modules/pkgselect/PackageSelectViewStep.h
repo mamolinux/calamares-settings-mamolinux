@@ -6,31 +6,44 @@
 
 #include "DllMacro.h"
 #include "utils/PluginFactory.h"
-#include "viewpages/QmlViewStep.h"
+#include "viewpages/ViewStep.h"
 
-class PLUGINDLLEXPORT PackageSelectViewStep : public Calamares::QmlViewStep
+#include "ui_pkgselect.h"
+
+namespace Ui {
+    class pkgselect;
+}
+
+class PLUGINDLLEXPORT PackageSelectViewStep : public Calamares::ViewStep
 {
     Q_OBJECT
-    Q_PROPERTY(QVariantMap packageSelections READ packageSelections WRITE setPackageSelections NOTIFY packageSelectionsChanged)
 
 public:
-    PackageSelectViewStep( QObject* parent = nullptr );
-    virtual ~PackageSelectViewStep() override;
+    explicit PackageSelectViewStep( QObject* parent = nullptr );
+    ~PackageSelectViewStep() override;
 
     QString prettyName() const override;
+    QWidget* widget() override;
+    Calamares::JobList jobs() const override;
+
+    bool isNextEnabled() const override;
+    bool isBackEnabled() const override;
+    bool isAtBeginning() const override;
+    bool isAtEnd() const override;
 
     void onActivate() override;
     void onLeave() override;
 
     QVariantMap packageSelections() const { return m_packageSelections; }
-    void setPackageSelections(const QVariantMap &value);
+    void updatePackageSelections(bool checked);
 
 signals:
     void packageSelectionsChanged();
 
 private:
     QVariantMap m_packageSelections;
-
+    Ui::pkgselect *ui;
+    QWidget* m_widget;
     bool exists_and_true(const QString& key) const;
 };
 

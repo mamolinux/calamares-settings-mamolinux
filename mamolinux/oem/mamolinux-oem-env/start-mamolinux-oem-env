@@ -9,9 +9,10 @@ export XDG_SESSION_DESKTOP="Lubuntu"
 export DESKTOP_SESSION="Lubuntu"
 export QT_STYLE_OVERRIDE="Breeze"
 export QT_QPA_PLATFORMTHEME="lxqt"
+export BROWSER='sudo -H -u mamolinux firefox'
 
 /usr/bin/openbox &
-/usr/bin/basicwallpaper /usr/share/lubuntu/wallpapers/lubuntu-default-wallpaper.png &
+/usr/bin/basicwallpaper /usr/share/backgrounds/mamolinux-default-wallpaper.jpeg &
 sudo -E /usr/bin/calamares -D8 # This is intentionally *not* backgrounded.
 # If it exits...
 killall basicwallpaper
