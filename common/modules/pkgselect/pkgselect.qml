@@ -16,23 +16,27 @@ Item {
         element.enabled = true;
         thunderbird.enabled = true;
         virtManager.enabled = true;
-        krita.enabled = true;
+        skype.enabled = true;
+        telegram.enabled = true;
         if (objectName === "minimalInstall") {
             isMinimalInstall = checked;
             element.checked = false;
             thunderbird.checked = false;
             virtManager.checked = false;
-            krita.checked = false;
+            skype.checked = false;
+            telegram.checked = false;
             element.enabled = false;
             thunderbird.enabled = false;
             virtManager.enabled = false;
-            krita.enabled = false;
+            skype.enabled = false;
+            telegram.enabled = false;
         } else if (objectName === "fullInstall") {
             isMinimalInstall = false;
             element.checked = true;
             thunderbird.checked = true;
             virtManager.checked = true;
-            krita.checked = true;
+            skype.checked = false;
+            telegram.checked = false;
         } else {
             isMinimalInstall = false;
         }
@@ -81,7 +85,7 @@ Item {
             indicator.height: 20
             onClicked: {
                 updatePackageSelections(objectName, checked);
-            }            
+            }
         }
         Text {
             text: qsTr("Only the desktop environment.")
@@ -169,6 +173,24 @@ Item {
                     font.italic: true
                     font.pointSize: 10
                 }
+
+                CheckBox {
+                    text: qsTr("Skype")
+                    checked: isFullInstall
+                    enabled: !isMinimalInstall
+                    objectName: "skype"
+                    font.pointSize: 11
+                    indicator.width: 18
+                    indicator.height: 18
+                    onClicked: {
+                        updatePackageSelections(objectName, checked);
+                    }
+                }
+                Text {
+                    text: qsTr("Connect, Create, Talk & Discover, now with Bing GPT-4")
+                    font.italic: true
+                    font.pointSize: 10
+                }
                 CheckBox {
                     text: qsTr("Thunderbird")
                     checked: isFullInstall
@@ -204,10 +226,10 @@ Item {
                     font.pointSize: 10
                 }
                 CheckBox {
-                    text: qsTr("Krita")
+                    text: qsTr("Telegram")
                     checked: isFullInstall
                     enabled: !isMinimalInstall
-                    objectName: "krita"
+                    objectName: "telegram"
                     font.pointSize: 11
                     indicator.width: 18
                     indicator.height: 18
@@ -216,7 +238,7 @@ Item {
                     }
                 }
                 Text {
-                    text: qsTr("Graphics editor designed primarily for digital art and 2D animation")
+                    text: qsTr("Fast and secure messaging application")
                     font.italic: true
                     font.pointSize: 10
                 }

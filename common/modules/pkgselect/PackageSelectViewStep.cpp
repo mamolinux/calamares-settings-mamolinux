@@ -75,12 +75,14 @@ void PackageSelectViewStep::onActivate()
             ui->element_button->setChecked(false);
             ui->thunderbird_button->setChecked(false);
             ui->virtmanager_button->setChecked(false);
-            ui->krita_button->setChecked(false);
+            ui->skype_button->setChecked(false);
+            ui->telegram_button->setChecked(false);
 
             ui->element_button->setEnabled(false);
             ui->thunderbird_button->setEnabled(false);
             ui->virtmanager_button->setEnabled(false);
-            ui->krita_button->setEnabled(false);
+            ui->skype_button->setEnabled(false);
+            ui->telegram_button->setEnabled(false);
         }
     });
 
@@ -95,12 +97,14 @@ void PackageSelectViewStep::onActivate()
             ui->element_button->setChecked(false);
             ui->thunderbird_button->setChecked(false);
             ui->virtmanager_button->setChecked(false);
-            ui->krita_button->setChecked(false);
+            ui->skype_button->setChecked(false);
+            ui->telegram_button->setChecked(false);
 
             ui->element_button->setEnabled(true);
             ui->thunderbird_button->setEnabled(true);
             ui->virtmanager_button->setEnabled(true);
-            ui->krita_button->setEnabled(true);
+            ui->skype_button->setEnabled(true);
+            ui->telegram_button->setEnabled(true);
         }
     });
 
@@ -115,12 +119,14 @@ void PackageSelectViewStep::onActivate()
             ui->element_button->setChecked(true);
             ui->thunderbird_button->setChecked(true);
             ui->virtmanager_button->setChecked(true);
-            ui->krita_button->setChecked(true);
+            ui->skype_button->setChecked(true);
+            ui->telegram_button->setChecked(true);
 
             ui->element_button->setEnabled(false);
             ui->thunderbird_button->setEnabled(false);
             ui->virtmanager_button->setEnabled(false);
-            ui->krita_button->setEnabled(false);
+            ui->skype_button->setEnabled(false);
+            ui->telegram_button->setEnabled(false);
         }
     });
 
@@ -144,12 +150,14 @@ void PackageSelectViewStep::onActivate()
         ui->element_button->setChecked(false);
         ui->thunderbird_button->setChecked(false);
         ui->virtmanager_button->setChecked(false);
-        ui->krita_button->setChecked(false);
+        ui->skype_button->setChecked(false);
+        ui->telegram_button->setChecked(false);
 
         ui->element_button->setEnabled(false);
         ui->thunderbird_button->setEnabled(false);
         ui->virtmanager_button->setEnabled(false);
-        ui->krita_button->setEnabled(false);
+        ui->skype_button->setEnabled(false);
+        ui->telegram_button->setEnabled(false);
     }
 
     // Thunderbird exists on Kubuntu already
@@ -173,7 +181,8 @@ void PackageSelectViewStep::onActivate()
     connect(ui->element_button, &QCheckBox::toggled, this, &PackageSelectViewStep::updatePackageSelections);
     connect(ui->thunderbird_button, &QCheckBox::toggled, this, &PackageSelectViewStep::updatePackageSelections);
     connect(ui->virtmanager_button, &QCheckBox::toggled, this, &PackageSelectViewStep::updatePackageSelections);
-    connect(ui->krita_button, &QCheckBox::toggled, this, &PackageSelectViewStep::updatePackageSelections);
+    connect(ui->skype_button, &QCheckBox::toggled, this, &PackageSelectViewStep::updatePackageSelections);
+    connect(ui->telegram_button, &QCheckBox::toggled, this, &PackageSelectViewStep::updatePackageSelections);
 }
 
 void
