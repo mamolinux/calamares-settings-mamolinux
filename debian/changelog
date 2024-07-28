@@ -1,3 +1,21 @@
+calamares-settings-mamolinux (1:24.04.39mamolinux2) noble; urgency=medium
+
+  * Rebase from lubuntu noble branch (#32)
+  * Update package name and installer icon (#33)
+    - Rename package to calamares-settings-mamolinux
+    - Use new icons for desktop files
+  * Rebase with lubuntu debian packaging (#34)
+    - This fixes the pkgselect module issue
+  * Update snaps to be installed and fix oem (#35)
+    - Remove krita
+    - Add skype and telegram
+    - Update pkgselect module for full and
+      normal installation
+    - Fix icon in oem desktop files
+    - Fix lintian
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Sun, 28 Jul 2024 11:13:55 +0530
+
 calamares-settings-mamolinux (1:24.04.39mamolinux1) noble; urgency=medium
 
   * Prepare for noble (#25)
