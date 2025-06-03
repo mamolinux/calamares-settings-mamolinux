@@ -6,5 +6,5 @@ Exec=/usr/bin/calamares-finish-oem
 Icon=mamolinux-installer
 Terminal=false
 StartupNotify=true
-Categories=Qt;System;
+Categories=System;
 Keywords=installer;calamares;system;

@@ -204,5 +204,5 @@
     - intel-oneapi-dpcpp-ct
     - intel-oneapi-dpcpp-debugger
     - intel-oneapi-inspector
-    - intel-oneapi-mkl-devel
-    - intel-oneapi-mpi-devel
+    - intel-oneapi-mkl
+    - intel-oneapi-mpi

@@ -4,13 +4,12 @@
 
 if [ -e '/etc/calamares/OEM_MODE_ACTIVATED' ]; then
   msg="$(cat <<EOL
-The installer was previously run in OEM mode. Please reboot to reset the
-configuration and try again.
+The installer was previously run in OEM mode. Please reboot to reset the configuration and try again.
 EOL
   )";
-  kdialog --msgbox "${msg}";
+  zenity --info --text="${msg}";
   exit 1;
 fi
 
 export BROWSER='sudo -H -u mamolinux firefox'
-calamares -D8;
+QT_STYLE_OVERRIDE=kvantum calamares -D8;

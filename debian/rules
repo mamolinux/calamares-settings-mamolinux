@@ -5,21 +5,26 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export GOPATH=/usr/share/gocode
 export GO111MODULE=off
 export GOCACHE=$(CURDIR)/.gocache
+export PKGSELECT = "common/modules/pkgselect"
+export PKGSELECTPROCESS = "common/modules/pkgselectprocess"
+export USRDIR = "debian/calamares-settings-ubuntu-common/usr"
+export DATA_USRDIR = "debian/calamares-settings-ubuntu-common-data/usr"
+export MODULES_DIR = "debian/calamares-settings-ubuntu-common/usr/lib/$(DEB_HOST_MULTIARCH)/calamares/modules"
+export DATA_MODULES_DIR = "debian/calamares-settings-ubuntu-common-data/usr/lib/calamares/modules"
 
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-PKGSELECT = "common/modules/pkgselect"
-MODULES_DIR = "debian/calamares-settings-ubuntu-common/usr/lib/$(DEB_HOST_MULTIARCH)/calamares/modules"
 
 %:
 	dh $@
 
 override_dh_auto_configure:
 	(cd $(PKGSELECT) && mkdir build && cd build && cmake ..)
+	(cd $(PKGSELECTPROCESS) && mkdir build && cd build && cmake ..)
 
 override_dh_auto_build:
 	make;
 	(cd $(PKGSELECT)/build && $(MAKE))
-	(cd common/snap-seed-glue && go build -gcflags="all=-N -l" -ldflags="-compressdwarf=false" -o snap-seed-glue main.go)
+	(cd $(PKGSELECTPROCESS)/build && $(MAKE))
 
 override_dh_auto_clean:
 	dh_auto_clean
@@ -30,17 +35,19 @@ override_dh_auto_install:
 
 override_dh_missing:
 	dh_missing
-	mkdir -pv $(MODULES_DIR)
-	cp -vr common/modules/automirror $(MODULES_DIR)
-	mkdir -pv debian/calamares-settings-ubuntu-common/etc/calamares/modules
-	cp -vr common/modules/*.conf debian/calamares-settings-ubuntu-common/etc/calamares/modules
-	chmod -R 755 debian/calamares-settings-ubuntu-common/usr/lib/
-	chmod 644 $(MODULES_DIR)/automirror/automirror.conf
-	chmod 644 $(MODULES_DIR)/automirror/module.desc
+	mkdir -pv $(MODULES_DIR) $(DATA_MODULES_DIR)
+	cp -vr common/modules/automirror $(DATA_MODULES_DIR)
+	mkdir -pv debian/calamares-settings-ubuntu-common-data/etc/calamares/modules
+	cp -vr common/modules/*.conf debian/calamares-settings-ubuntu-common-data/etc/calamares/modules
+	chmod 644 $(DATA_MODULES_DIR)/automirror/automirror.conf
+	chmod 644 $(DATA_MODULES_DIR)/automirror/module.desc
 	chmod 644 $(MODULES_DIR)/pkgselect/libcalamares_viewmodule_pkgselect.so
 	chmod 644 $(MODULES_DIR)/pkgselect/module.desc
-	mkdir -pv debian/calamares-settings-ubuntu-common/usr/bin/
-	cp -v common/snap-seed-glue/snap-seed-glue debian/calamares-settings-ubuntu-common/usr/bin/snap-seed-glue
-	mkdir -pv debian/calamares-settings-ubuntu-common/usr/libexec/
-	cp -v common/fixconkeys-part1 debian/calamares-settings-ubuntu-common/usr/libexec/fixconkeys-part1
-	cp -v common/fixconkeys-part2 debian/calamares-settings-ubuntu-common/usr/libexec/fixconkeys-part2
+	mkdir -pv $(MODULES_DIR)/pkgselectprocess
+	cp -v $(PKGSELECTPROCESS)/build/*.so $(PKGSELECTPROCESS)/build/*.desc $(MODULES_DIR)/pkgselectprocess
+	chmod 644 $(MODULES_DIR)/pkgselectprocess/libcalamares_job_pkgselectprocess.so
+	chmod 644 $(MODULES_DIR)/pkgselectprocess/module.desc
+	mkdir -pv $(USRDIR)/libexec/ $(DATA_USRDIR)/libexec/
+	cp -v common/fixconkeys-part1 $(DATA_USRDIR)/libexec/fixconkeys-part1
+	cp -v common/fixconkeys-part2 $(DATA_USRDIR)/libexec/fixconkeys-part2
+	cp -v $(PKGSELECTPROCESS)/build/check_package $(USRDIR)/libexec/checkpackage-backend

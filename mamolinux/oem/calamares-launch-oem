@@ -4,21 +4,18 @@
 
 if [ -e '/etc/calamares/OEM_MODE_ACTIVATED' ]; then
   export BROWSER='sudo -H -u mamolinux firefox'
-  calamares -D8;
+  QT_STYLE_OVERRIDE=kvantum calamares -D8;
   exit;
 fi
 
 msg="$(cat <<EOL
-You are about to install the OS in OEM mode. This will prepare the system for
-distribution to an end user, providing them with an account setup wizard. If
-you do not need this capability, please cancel and use the normal install
-method.
+You are about to install the OS in OEM mode. This will prepare the system for distribution to an end user, providing them with an account setup wizard. If you do not need this capability, please cancel and use the normal install method.
 
 Are you sure you want to continue?
 EOL
 )";
 
-if kdialog --warningyesno "${msg}"; then
+if zenity --question --text="${msg}"; then
   # Tweak branding to make it clear that OEM installation mode is active
   cp /etc/calamares/branding/mamolinux/welcome-oem.png /etc/calamares/branding/mamolinux/welcome.png;
 
@@ -29,7 +26,10 @@ if kdialog --warningyesno "${msg}"; then
   sed -i "/- welcome$/a \ \ - oemid" /etc/calamares/settings.conf;
 
   # Enable OEM prep module
-  sed -i "/- packages$/a \ \ - shellprocess@oemprep" /etc/calamares/settings.conf;
+  sed -i "/- pkgselectprocess$/a \ \ - shellprocess@oemprep" /etc/calamares/settings.conf;
+
+  # Fix OEM UID
+  sed -i "/- shellprocess@oemprep$/a \ \ - shellprocess@fix-oem-uid" /etc/calamares/settings.conf;
 
   # Force the user of an OEM configuration user
   cp /etc/calamares/modules/users.conf.oem /etc/calamares/modules/users.conf;
@@ -40,5 +40,5 @@ if kdialog --warningyesno "${msg}"; then
 
   # Launch Calamares
   export BROWSER='sudo -H -u mamolinux firefox'
-  calamares -D8;
+  QT_STYLE_OVERRIDE=kvantum calamares -D8;
 fi
