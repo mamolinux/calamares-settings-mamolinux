@@ -25,10 +25,10 @@ windowPlacement: center
 strings:
     productName:         MamoLinux
     shortProductName:    MamoLinux
-    version:             24.04 LTS
-    shortVersion:        noble
+    version:             25.04
+    shortVersion:        plucky
     versionedName:       MamoLinux
-    shortVersionedName:  MamoLinux 24.04 LTS
+    shortVersionedName:  MamoLinux 25.04
     bootloaderEntryName: Ubuntu
     productUrl:          https://hsbasu.github.io/mamolinux/
     supportUrl:          https://github.com/hsbasu/mamolinux/issues

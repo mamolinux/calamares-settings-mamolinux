@@ -10,9 +10,9 @@ all:
 	# basicwallpaper
 	(cd common/basicwallpaper && mkdir build && cd build && cmake .. -DCMAKE_BUILD_TYPE=Release && make)
 	# MamoLinux OEM setup stuff
-	(cd mamolinux && mkdir oemconfig && cd oemconfig && mkdir -p usr/bin && mkdir -p etc/calamares && mkdir -p usr/share/xsessions && mkdir -p usr/libexec && mkdir -p etc && mkdir -p usr/share/applications)
+	(cd mamolinux && mkdir oemconfig && cd oemconfig && mkdir -p usr/bin && mkdir -p etc/calamares && mkdir -p usr/share/xsessions && mkdir -p usr/libexec && mkdir -p etc/lightdm && mkdir -p usr/share/applications && mkdir -p home/oem/Desktop)
 	(cp mamolinux/calamares-logs-helper mamolinux/oemconfig/usr/bin/)
-	(cp mamolinux/oem/sddm.conf mamolinux/oemconfig/etc/)
+	(cp mamolinux/oem/lightdm.conf mamolinux/oemconfig/etc/lightdm/)
 	(cp mamolinux/oem/sudoers.oem mamolinux/oemconfig/etc/ && chmod 400 mamolinux/oemconfig/etc/sudoers.oem)
 	(cp mamolinux/oem/calamares-oemfinish.sh mamolinux/oemconfig/usr/libexec/)
 	(cp mamolinux/oem/calamares-finish-oem mamolinux/oemconfig/usr/bin/)
@@ -23,6 +23,7 @@ all:
 	(cp mamolinux/oem/mamolinux-oem-env/mamolinux-oem-environment.desktop mamolinux/oemconfig/usr/share/xsessions/)
 	(cp mamolinux/oem/mamolinux-oem-env/start-mamolinux-oem-env mamolinux/oemconfig/usr/libexec/)
 	(cp common/basicwallpaper/build/basicwallpaper mamolinux/oemconfig/usr/bin/)
+	(cp mamolinux/oem/calamares-finish-oem.desktop mamolinux/oemconfig/home/oem/Desktop/)
 	(fakeroot bash -c "chown -R root:root mamolinux/oemconfig && tar cvzf mamolinux/oemconfig.tar.gz mamolinux/oemconfig")
 	# Get rid of the unnecessary files
 	find mamolinux/ -type f -iname "*.in" | xargs rm -f
