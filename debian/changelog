@@ -1,3 +1,12 @@
+calamares-settings-mamolinux (1:25.04.27-0mamolinux1) plucky; urgency=medium
+
+  * Rebase with lubuntu plucky (#37)
+    - Welcome to Plucky Puffin
+  * Use single script for launching installer (#38)
+  * Add files from plucky (#39)
+
+ -- Himadri Sekhar Basu <hsb10@iitbbs.ac.in>  Sat, 27 Dec 2025 12:25:31 +0530
+
 calamares-settings-mamolinux (1:24.04.39mamolinux2) noble; urgency=medium
 
   * Rebase from lubuntu noble branch (#32)
