@@ -5,8 +5,22 @@
   selected: false
   expanded: true
   packages:
-    - mamolinux-desktop
-    - mamolinux-desktop-full
+    - name: mamolinux-desktop
+      description: "MamoLinux Cinnamon with minimal utilities"
+    - name: mamolinux-desktop-full
+      description: "Full desktop of MamoLinux Cinnamon with all utilities"
+    - name: mamolinux-budgie-minimal
+      description: "MamoLinux Budgie with minimal utilities"
+    - name: mamolinux-budgie
+      description: "MamoLinux Budgie with basic utilities"
+    - name: mamolinux-budgie-full
+      description: "Full desktop of MamoLinux Budgie with all utilities"
+    - name: mamolinux-gnome-minimal
+      description: "MamoLinux Gnome with minimal utilities"
+    - name: mamolinux-gnome
+      description: "MamoLinux Gnome with basic utilities"
+    - name: mamolinux-gnome-full
+      description: "Full desktop of MamoLinux Gnome with all utilities"
 - name: "Accessories"
   description: "Accessories"
   critical: false
@@ -14,25 +28,48 @@
   selected: false
   expanded: true
   packages:
-    - baobab
-    - cheese
-    - flameshot
-    - font-manager
-    - galculator
-    - gnome-calendar
-    - gnome-characters
-    - gnome-todo
-    - gpick
-    - gucharmap
-    - liferea
-    - nitrogen
-    - nomacs
-    - p7zip-full
-    - screenkey
-    - simple-scan
-    - sticky
-    - variety
-    - usb-creator-gtk
+    - name: baobab
+    	description: "GNOME disk usage analyzer"
+    - name: cheese
+      description: "Tool to take pictures and videos from your webcam"
+    - name: flameshot
+      description: "Powerful yet simple-to-use screenshot software"
+    - name: font-manager
+      description: "Font management application for the GNOME desktop"
+    - name: galculator
+      description: "scientific calculator"
+    - name: gcolor3
+      description: "Simple GTK3 color selector and picker"
+    - name: gnome-calendar
+      description: "Calendar application for GNOME"
+    - name: gnome-characters
+      description: "character map application"
+    - name: gnome-snapshot
+      description: "Take pictures and videos from your webcam"
+    - name: endeavour
+      description: "minimalistic personal task manager designed to fit GNOME desktop"
+    - name: gpick
+      description: ""
+    - name: gucharmap
+      description: ""
+    - name: liferea
+      description: ""
+    - name: nitrogen
+      description: ""
+    - name: nomacs
+      description: ""
+    - name: p7zip-full
+      description: ""
+    - name: screenkey
+      description: ""
+    - name: simple-scan
+      description: ""
+    - name: sticky
+      description: ""
+    - name: variety
+      description: ""
+    - name: usb-creator-gtk
+      description: ""
 - name: "Education"
   description: "Educating applications"
   critical: false
@@ -40,11 +77,16 @@
   selected: false
   expanded: true
   packages:
-    - goldendict
-    - texlive-base
-    - texlive-bibtex-extra
-    - texlive-latex-base
-    - texlive-xetex
+    - name: goldendict
+      description: ""
+    - name: texlive-base
+      description: ""
+    - name: texlive-bibtex-extra
+      description: ""
+    - name: texlive-latex-base
+      description: ""
+    - name: texlive-xetex
+      description: ""
 - name: "Games"
   description: "Gaming applications"
   critical: false
@@ -52,11 +94,16 @@
   selected: false
   expanded: true
   packages:
-    - aisleriot
-    - gnome-chess
-    - gnome-mahjongg
-    - gnome-mines
-    - gnome-sudoku
+    - name: aisleriot
+      description: ""
+    - name: gnome-chess
+      description: ""
+    - name: gnome-mahjongg
+      description: ""
+    - name: gnome-mines
+      description: ""
+    - name: gnome-sudoku
+      description: ""
 - name: "Graphics"
   description: "Painting and Imaging"
   critical: false
@@ -64,11 +111,18 @@
   selected: false
   expanded: true
   packages:
-    - shotwell
-    - gimp
-    - krita
-    - inkscape
-    - pinta
+    - name: loupe
+      description: ""
+    - name: shotwell
+      description: ""
+    - name: gimp
+      description: ""
+    - name: krita
+      description: ""
+    - name: inkscape
+      description: ""
+    - name: pinta
+      description: ""
 - name: "Internet"
   description: "Internet applications"
   critical: false
@@ -76,17 +130,28 @@
   selected: false
   expanded: true
   packages:
-    - anydesk
-    - evolution
-    - hexchat
-    - kdeconnect
-    - microsoft-edge-stable
-    - remmina
-    - skypeforlinux
-    - syncthing
-    - thunderbird
-    - transmission-gtk
-    - webapp-manager
+    - name: anydesk
+      description: "The fastest remote desktop software on the market."
+    - name: brave-browser
+      description: "The web browser from Brave"
+    - name: evolution
+      description: ""
+    - name: hexchat
+      description: ""
+    - name: kdeconnect
+      description: ""
+    - name: microsoft-edge-stable
+      description: ""
+    - name: remmina
+      description: ""
+    - name: syncthing
+      description: ""
+    - name: thunderbird
+      description: ""
+    - name: transmission-gtk
+      description: ""
+    - name: webapp-manager
+      description: ""
 - name: "Office"
   description: "Office applications"
   critical: false
@@ -94,18 +159,18 @@
   selected: false
   expanded: true
   packages:
-    - mcomix
-    - pdfarranger
-    - libreoffice
-    - libreoffice-gnome
-    - libreoffice-ogltrans
-    - libreoffice-pdfimport
-    - libreoffice-base
-    - libreoffice-calc
-    - libreoffice-draw
-    - libreoffice-imptress
-    - libreoffice-math
-    - libreoffice-writer
+    - name: mcomix
+    - name: pdfarranger
+    - name: libreoffice
+    - name: libreoffice-gnome
+    - name: libreoffice-ogltrans
+    - name: libreoffice-pdfimport
+    - name: libreoffice-base
+    - name: libreoffice-calc
+    - name: libreoffice-draw
+    - name: libreoffice-imptress
+    - name: libreoffice-math
+    - name: libreoffice-writer
 - name: "Multimedia"
   description: "Sound and Video applications"
   critical: false
@@ -113,11 +178,11 @@
   selected: false
   expanded: true
   packages:
-    - handbrake
-    - mediainfo-gui
-    - rhythmbox
-    - totem
-    - vlc-plugin-access-extra
+    - name: handbrake
+    - name: mediainfo-gui
+    - name: rhythmbox
+    - name: totem
+    - name: vlc-plugin-access-extra
 - name: "Administration"
   description: "System Administration"
   critical: false
@@ -125,18 +190,19 @@
   selected: false
   expanded: true
   packages:
-    - battery-monitor
-    - dconf-editor
-    - deb-get
-    - deja-dup
-    - flatpak
-    - gdebi
-    - grsync
-    - hardinfo
-    - leaptime-manager
-    - lm-sensors
-    - luckybackup
-    - timeshift
+    - name: battery-monitor
+    - name: dconf-editor
+    - name: deb-get
+    - name: deja-dup
+    - name: flatpak
+    - name: gdebi
+    - name: grsync
+    - name: hardinfo
+    - name: leaptime-manager
+    - name: lm-sensors
+    - name: luckybackup
+    - name: ptyxis
+    - name: timeshift
 - name: "Development"
   description: "Applications for development and programming"
   critical: false
@@ -144,15 +210,15 @@
   selected: false
   expanded: true
   packages:
-    - code
-    - debootstrap
-    - git
-    - gitg
-    - git-build-recipe
-    - glade
-    - intltool
-    - pbuilder
-    - ubuntu-dev-tools
+    - name: code
+    - name: debootstrap
+    - name: git
+    - name: gitg
+    - name: git-build-recipe
+    - name: glade
+    - name: intltool
+    - name: pbuilder
+    - name: ubuntu-dev-tools
 - name: "Security"
   description: "Password managers and Security"
   critical: false
@@ -160,12 +226,12 @@
   selected: false
   expanded: true
   packages:
-    - bitwarden
-    - gtkhash
-    - keepassxc
-    - lastpass-cli
-    - seahorse
-    - simple-pwgen
+    - name: bitwarden
+    - name: gtkhash
+    - name: keepassxc
+    - name: lastpass-cli
+    - name: seahorse
+    - name: simple-pwgen
 - name: "Fonts"
   description: "Fonts"
   critical: false
@@ -173,12 +239,12 @@
   selected: false
   expanded: true
   packages:
-    - fonts-indic
-    - fonts-liberation2
-    - fonts-noto
-    - fonts-noto-color-emoji
-    - fonts-noto-extra
-    - fonts-opensymbol
+    - name: fonts-indic
+    - name: fonts-liberation2
+    - name: fonts-noto
+    - name: fonts-noto-color-emoji
+    - name: fonts-noto-extra
+    - name: fonts-opensymbol
 - name: "Zsh"
   description: "Zsh"
   critical: false
@@ -186,10 +252,10 @@
   selected: false
   expanded: true
   packages:
-    - zsh
-    - zsh-autosuggestions
-    - zsh-syntax-highlighting
-    - zsh-theme-powerlevel9k
+    - name: zsh
+    - name: zsh-autosuggestions
+    - name: zsh-syntax-highlighting
+    - name: zsh-theme-powerlevel9k
 - name: "Intel oneAPI"
   description: "Intel oneAPI Toolkits"
   critical: false
@@ -197,12 +263,16 @@
   selected: false
   expanded: true
   packages:
-    - intel-oneapi-compiler-dpcpp-cpp
-    - intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic
-    - intel-oneapi-dev-utilities
-    - intel-oneapi-diagnostics-utility
-    - intel-oneapi-dpcpp-ct
-    - intel-oneapi-dpcpp-debugger
-    - intel-oneapi-inspector
-    - intel-oneapi-mkl
-    - intel-oneapi-mpi
+    - name: intel-oneapi-compiler-dpcpp-cpp
+      description: "Intel® oneAPI DPC++/C++ Compiler"
+    - name: intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic
+      description: "Intel® oneAPI DPC++/C++ Compiler & Intel® C++ Compiler Classic 2023.2.4 for Linux* for Intel(R) 64"
+    - name: intel-oneapi-dev-utilities
+    - name: intel-oneapi-diagnostics-utility
+    - name: intel-oneapi-dpcpp-ct
+    - name: intel-oneapi-dpcpp-debugger
+    - name: intel-oneapi-inspector
+    - name: intel-oneapi-mkl
+      description: "Intel® oneAPI Math Kernel Library 2025.1.0 for Linux* runtime package for Intel(R) 64"
+    - name: intel-oneapi-mpi
+      description: "Intel® MPI Library Runtime Environment"
