@@ -1,0 +1,30 @@
+#!/bin/python3
+
+import argparse
+import os
+import sys
+import traceback
+
+if __name__ == "__main__":
+	parser = argparse.ArgumentParser(description='Install MamoLinux using Calamares installer.',
+								  formatter_class=argparse.RawTextHelpFormatter)
+	parser.add_argument("-d", "--default", action='store_true', dest='start_default', default=True,
+						help=_("Install MamoLinux using default settings."))
+	parser.add_argument("-a", "--advanced", action='store_true', dest='start_advanced', default=False,
+						help=_("Install MamoLinux using advanced settings."))
+	args = parser.parse_args()
+	
+	try:
+		try:
+			if args.start_default:
+				os.system("sudo -E cp /etc/calamares/settings-default.conf /etc/calamares/settings.conf")
+			if args.start_advanced:
+				os.system("sudo -E cp /etc/calamares/settings-advanced.conf /etc/calamares/settings.conf")
+			os.system("sudo -E /usr/bin/calamares-launch-normal")
+		except:
+			print(traceback.print_exc())
+			parser.print_help()
+			sys.exit(0)
+	except:
+		parser.print_help()
+		sys.exit(0)

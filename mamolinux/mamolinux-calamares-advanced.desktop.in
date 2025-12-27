@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-_Name=Install MamoLinux 24.04 LTS (Advanced)
+_Name=Install MamoLinux 25.04 (Advanced)
 _GenericName=Install MamoLinux (Advanced)
-Exec=bash -c "export BROWSER='sudo -H -u mamolinux firefox'; mamolinux-advanced-install"
+Exec=mamolinux-install --advanced
 _Comment=Calamares — System Installer
 Icon=mamolinux-installer
 Terminal=false
