@@ -29,7 +29,7 @@
   expanded: true
   packages:
     - name: baobab
-    	description: "GNOME disk usage analyzer"
+      description: "GNOME disk usage analyzer"
     - name: cheese
       description: "Tool to take pictures and videos from your webcam"
     - name: flameshot
@@ -49,27 +49,27 @@
     - name: endeavour
       description: "minimalistic personal task manager designed to fit GNOME desktop"
     - name: gpick
-      description: ""
+      description: "advanced GTK+ color picker"
     - name: gucharmap
-      description: ""
+      description: "Unicode character picker and font browser "
     - name: liferea
-      description: ""
+      description: "feed/news/podcast client with plugin support "
     - name: nitrogen
-      description: ""
+      description: "wallpaper browser and changing utility for X"
     - name: nomacs
-      description: ""
-    - name: p7zip-full
-      description: ""
+      description: "image viewer with capability of syncing multiple instances"
+    - name: 7zip
+      description: "7-Zip file archiver with a high compression ratio"
     - name: screenkey
-      description: ""
+      description: "screencast tool to display your keystrokes"
     - name: simple-scan
-      description: ""
+      description: "Simple Scanning Utility"
     - name: sticky
-      description: ""
+      description: "Window Maker dockapp to create sticky notes on desktop"
     - name: variety
-      description: ""
+      description: "Wallpaper changer, downloader and manager"
     - name: usb-creator-gtk
-      description: ""
+      description: "create a startup disk using a CD or disc image"
 - name: "Education"
   description: "Educating applications"
   critical: false
@@ -77,16 +77,16 @@
   selected: false
   expanded: true
   packages:
-    - name: goldendict
-      description: ""
+    - name: goldendict-ng
+      description: "	feature-rich dictionary lookup program (NG/qtwebengine fork)"
     - name: texlive-base
-      description: ""
+      description: "TeX Live: Essential programs and files"
     - name: texlive-bibtex-extra
-      description: ""
+      description: "TeX Live: BibTeX additional styles"
     - name: texlive-latex-base
-      description: ""
+      description: "TeX Live: LaTeX fundamental packages"
     - name: texlive-xetex
-      description: ""
+      description: "TeX Live: XeTeX and packages"
 - name: "Games"
   description: "Gaming applications"
   critical: false
@@ -95,15 +95,15 @@
   expanded: true
   packages:
     - name: aisleriot
-      description: ""
+      description: "GNOME solitaire card game collection"
     - name: gnome-chess
-      description: ""
+      description: "simple chess game"
     - name: gnome-mahjongg
-      description: ""
+      description: "classic Eastern tile game for GNOME"
     - name: gnome-mines
-      description: ""
+      description: "popular minesweeper puzzle game for GNOME"
     - name: gnome-sudoku
-      description: ""
+      description: "Sudoku puzzle game for GNOME"
 - name: "Graphics"
   description: "Painting and Imaging"
   critical: false
@@ -112,17 +112,15 @@
   expanded: true
   packages:
     - name: loupe
-      description: ""
+      description: "Image viewer for GNOME"
     - name: shotwell
-      description: ""
+      description: "digital photo organizer"
     - name: gimp
-      description: ""
+      description: "GNU Image Manipulation Program"
     - name: krita
-      description: ""
+      description: "pixel-based image manipulation program"
     - name: inkscape
-      description: ""
-    - name: pinta
-      description: ""
+      description: "vector-based drawing program"
 - name: "Internet"
   description: "Internet applications"
   critical: false
@@ -133,25 +131,25 @@
     - name: anydesk
       description: "The fastest remote desktop software on the market."
     - name: brave-browser
-      description: "The web browser from Brave"
+      description: "Web browser that blocks ads and trackers by default"
     - name: evolution
-      description: ""
+      description: "groupware suite with mail client and organizer"
     - name: hexchat
-      description: ""
+      description: "IRC client for X based on XChat"
     - name: kdeconnect
-      description: ""
+      description: "connect smartphones to your desktop devices"
     - name: microsoft-edge-stable
-      description: ""
+      description: "The Microsoft Edge web browser"
     - name: remmina
-      description: ""
+      description: "remote desktop client written in GTK+"
     - name: syncthing
-      description: ""
+      description: "decentralized file synchronization"
     - name: thunderbird
-      description: ""
+      description: "mail/news client with RSS and integrated spam filter support"
     - name: transmission-gtk
-      description: ""
+      description: "lightweight BitTorrent client (GTK+)"
     - name: webapp-manager
-      description: ""
+      description: "Run websites as if they were apps"
 - name: "Office"
   description: "Office applications"
   critical: false
@@ -160,17 +158,29 @@
   expanded: true
   packages:
     - name: mcomix
+      description: "comic book viewer"
     - name: pdfarranger
+      description: "merge, split and rearrange pages from PDF documents"
     - name: libreoffice
+      description: "office productivity suite (metapackage)"
     - name: libreoffice-gnome
+      description: "office productivity suite -- GNOME integration"
     - name: libreoffice-ogltrans
+      description: "transitional package for LibreOffice OpenGL support"
     - name: libreoffice-pdfimport
+      description: "PDF import extension for LibreOffice"
     - name: libreoffice-base
+      description: "database front-end of LibreOffice office suite"
     - name: libreoffice-calc
+      description: "office productivity suite -- spreadsheet"
     - name: libreoffice-draw
-    - name: libreoffice-imptress
+      description: "office productivity suite -- drawing"
+    - name: libreoffice-impress
+      description: "office productivity suite -- presentation"
     - name: libreoffice-math
+      description: "office productivity suite -- equation editor"
     - name: libreoffice-writer
+      description: "office productivity suite -- word processor"
 - name: "Multimedia"
   description: "Sound and Video applications"
   critical: false
@@ -179,10 +189,15 @@
   expanded: true
   packages:
     - name: handbrake
+      description: "video transcoder"
     - name: mediainfo-gui
+      description: "graphical utility for displaying media information"
     - name: rhythmbox
+      description: "music player and organizer for GNOME"
     - name: totem
+      description: "simple media player for the GNOME desktop"
     - name: vlc-plugin-access-extra
+      description: "extra access modules for VLC media player"
 - name: "Administration"
   description: "System Administration"
   critical: false
@@ -191,18 +206,31 @@
   expanded: true
   packages:
     - name: battery-monitor
+      description: "Cross-platform Python utility that notifies about charging, discharging, and critically low battery states"
     - name: dconf-editor
+      description: "simple editor for dconf databases"
     - name: deb-get
+      description: "apt-like helper for installing .deb packages from third-party sources or direct downloads"
     - name: deja-dup
+      description: "simple backup tool"
     - name: flatpak
+      description: "application deployment framework for desktop apps"
     - name: gdebi
+      description: "simple tool to install deb files"
     - name: grsync
+      description: "graphical interface for rsync"
     - name: hardinfo
+      description: "system profiler and benchmark tool"
     - name: leaptime-manager
+      description: "Python3-based GUI backup and sync manager for Debian/Ubuntu systems"
     - name: lm-sensors
+      description: "utilities to read temperature/voltage/fan sensors"
     - name: luckybackup
+      description: "graphical backup and sync tool based on rsync"
     - name: ptyxis
+      description: "GNOME terminal emulator"
     - name: timeshift
+      description: "system restore utility for Linux"
 - name: "Development"
   description: "Applications for development and programming"
   critical: false
@@ -211,14 +239,23 @@
   expanded: true
   packages:
     - name: code
+      description: "Code editing. Redefined."
     - name: debootstrap
+      description: "bootstrap a basic Debian system"
     - name: git
+      description: "fast, scalable, distributed revision control system"
     - name: gitg
+      description: "graphical user interface for git"
     - name: git-build-recipe
+      description: "build packages from Git branches"
     - name: glade
+      description: "GTK+ rapid application development tool"
     - name: intltool
+      description: "Utility scripts for internationalizing XML"
     - name: pbuilder
+      description: "personal Debian package builder"
     - name: ubuntu-dev-tools
+      description: "tools for Ubuntu developers and maintainers"
 - name: "Security"
   description: "Password managers and Security"
   critical: false
@@ -227,11 +264,17 @@
   expanded: true
   packages:
     - name: bitwarden
+      description: "secure and free password manager"
     - name: gtkhash
+      description: "GTK+ utility for computing message digests and checksums"
     - name: keepassxc
+      description: "cross-platform password manager"
     - name: lastpass-cli
+      description: "command line interface to LastPass password manager"
     - name: seahorse
+      description: "GNOME application for managing encryption keys and passwords"
     - name: simple-pwgen
+      description: "very simple Python3-based GUI application to generate secure random passwords"
 - name: "Fonts"
   description: "Fonts"
   critical: false
@@ -239,12 +282,18 @@
   selected: false
   expanded: true
   packages:
-    - name: fonts-indic
-    - name: fonts-liberation2
-    - name: fonts-noto
-    - name: fonts-noto-color-emoji
-    - name: fonts-noto-extra
-    - name: fonts-opensymbol
+  - name: fonts-indic
+    description: "Meta package to install all Indian language fonts"
+  - name: fonts-liberation2
+    description: "Fonts with the same metrics as Times, Arial and Courier (v2)"
+  - name: fonts-noto
+    description: "Meta package to install all Noto fonts"
+  - name: fonts-noto-color-emoji
+    description: "color emoji font from Google"
+  - name: fonts-noto-extra
+    description: "extra fonts from Google Noto families"
+  - name: fonts-opensymbol
+    description: "OpenSymbol TrueType font"
 - name: "Zsh"
   description: "Zsh"
   critical: false
@@ -253,9 +302,13 @@
   expanded: true
   packages:
     - name: zsh
+      description: "shell with lots of features"
     - name: zsh-autosuggestions
+      description: "Fish-like fast/unobtrusive autosuggestions for zsh"
     - name: zsh-syntax-highlighting
+      description: "Fish shell like syntax highlighting for zsh"
     - name: zsh-theme-powerlevel9k
+      description: "powerlevel9k is a theme for zsh which uses powerline fonts"
 - name: "Intel oneAPI"
   description: "Intel oneAPI Toolkits"
   critical: false
@@ -266,13 +319,18 @@
     - name: intel-oneapi-compiler-dpcpp-cpp
       description: "Intel® oneAPI DPC++/C++ Compiler"
     - name: intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic
-      description: "Intel® oneAPI DPC++/C++ Compiler & Intel® C++ Compiler Classic 2023.2.4 for Linux* for Intel(R) 64"
+      description: "Intel® oneAPI DPC++/C++ Compiler and Intel® C++ Compiler Classic"
     - name: intel-oneapi-dev-utilities
+      description: "Intel oneAPI Dev Utilities"
     - name: intel-oneapi-diagnostics-utility
+      description: "Diagnostics Utility for Intel® oneAPI Toolkits"
     - name: intel-oneapi-dpcpp-ct
+      description: "Intel® oneAPI DPC++ Compatibility Tool"
     - name: intel-oneapi-dpcpp-debugger
+      description: "Intel® oneAPI DPC++ Debugger"
     - name: intel-oneapi-inspector
+      description: "Intel® oneAPI Inspector"
     - name: intel-oneapi-mkl
-      description: "Intel® oneAPI Math Kernel Library 2025.1.0 for Linux* runtime package for Intel(R) 64"
+      description: "Intel® oneAPI Math Kernel Library"
     - name: intel-oneapi-mpi
       description: "Intel® MPI Library Runtime Environment"
